@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página de Usuario</title>
+</head>
+<body>
+    <h2>Bienvenido!, <span id="username"></span>!</h2>
+    <a href="./index.html"><h2> Volve a la pagina principal</h2></a>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const username = urlParams.get("user");
+        document.getElementById("username").textContent = username;
+        const isAuthenticated = true;
+    </script>
+</body>
+</html>

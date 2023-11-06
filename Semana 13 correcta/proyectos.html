@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./images/favicon.jpeg" type="image/x-icon">
+    <title>Iot GDR</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./proyectos.html">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sobre-mi.html">Sobre-mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./buscador.html">Buscador</a>
+            </li>
+    
+            <li class="nav-item">
+              
+            </li>    
+          </ul>
+
+        </div>
+    </nav>
+      
+    <div class="container">
+        <div class="item"><h1><span style="color: #0b65b4; font-size:1.5em;">Iot-firebase-Temp-Hum-4CH:</span></h1></div>
+        <div class="item"><h3>Control de temperatura, humedad, ventilación, luces y riego. Mediante un ESP8266 usando como servidor Firebase.</h3></div>
+        <div class="item"><img src="./images/proyecto.jpeg" width="80%"></div>
+        <div class="item">
+          <p style="font-size: 20px;">
+            El código es una implementación de JavaScript que utiliza Firebase para controlar dispositivos y sensores, como calefacción, 
+            luces, termostato, riego y ventilación, basándose en datos de sensores de humedad y temperatura. Además, incluye funcionalidad 
+            de temporizador para activar y desactivar dispositivos en horarios específicos. Este código se utiliza para crear un sistema 
+            de automatización del hogar que controla dispositivos y ajusta el entorno en función de la temperatura y la programación horaria. 
+            Los datos se almacenan y se recuperan de Firebase para mantener la persistencia de la 
+            configuración y el estado de los dispositivos.
+          </p>
+        </div>
+        <div class="item" style="text-align: center;">
+          <a href="https://github.com/Gonzalo-Robles/Iot-firebase-Temp-Hum-4CH#iot-firebase-temp-hum-4ch" target="_blank">
+            <button id="buttonExtra" style="margin-bottom: 100px;">Descarga código</button>
+          </a>
+        </div>
+
+      <div class="item" style="text-align: center;"><h3>Componenentes usados en el proyecto</h3></div>
+        <!------------------------------ Carousel -------------------------------------->
+      <div class="item">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/wemosd1 ports.png" class="d-block w-100" alt="wemosd1">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/dht11.jpeg" class="d-block w-100" alt="dht11">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/modulorele4ch_1-500x500.jpg" class="d-block w-100" alt="modulos">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="item" style="text-align: center;"><h3>Puertos del Wemos D1 mini (ESP8266)</h3></div>
+    <!-- USO DE TABLAS-->
+    <div class="item" style="text-align: center;">
+      <table class="table" style="max-width: 650px; margin: 0 auto;">
+        <thead>
+          <tr>
+            <th scope="col">Pin</th>
+            <th scope="col">ESP-8266 Pin</th>
+            <th scope="col">Función</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">TX</th>
+            <td>TXD</td>
+            <td>TXD</td>
+          </tr>
+          <tr>
+            <th scope="row">RX</th>
+            <td>RXD</td>
+            <td>RXD</td>
+          </tr>
+          <tr>
+            <th scope="row">A0</th>
+            <td>A0</td>
+            <td>Analog input (max 3.2V)</td>
+          </tr>
+          <tr>
+            <th scope="row">D0</th>
+            <td>GPIO16</td>
+            <td>IO</td>
+          </tr>
+          <tr>
+            <th scope="row">D1</th>
+            <td>GPIO5</td>
+            <td>IO, PWM, Interrupt, I2C, SCL</td>
+          </tr>
+          <tr>
+            <th scope="row">D2</th>
+            <td>GPIO4</td>
+            <td>IO, PWM, Interrupt, I2C, SDA</td>
+          </tr>
+          <tr>
+            <th scope="row">D3</th>
+            <td>GPIO0</td>
+            <td>IO 10k Pull-up, PWM, Interrupt, I2C</td>
+          </tr>
+          <tr>
+            <th scope="row">D4</th>
+            <td>GPIO2</td>
+            <td>IO 10k Pull-up, PWM, Interrupt, I2C, BUILTIN_LED</td>
+          </tr>
+          <tr>
+            <th scope="row">D5</th>
+            <td>GPIO14</td>
+            <td>IO, PWM, Interrupt, I2C, SCK</td>
+          </tr>
+          <tr>
+            <th scope="row">D6</th>
+            <td>GPIO12</td>
+            <td>IO, PWM, Interrupt, I2C, MISO</td>
+          </tr>
+          <tr>
+            <th scope="row">D7</th>
+            <td>GPIO13</td>
+            <td>IO, PWM, Interrupt, I2C, MOSI</td>
+          </tr>
+          <tr>
+            <th scope="row">D8</th>
+            <td>GPIO15</td>
+            <td>IO 10k Pull-down, PWM, Interrupt, I2C, SS</td>
+          </tr>
+          <tr>
+            <th scope="row">G</th>
+            <td>GND</td>
+            <td>Ground</td>
+          </tr>
+          <tr>
+            <th scope="row">5V</th>
+            <td>-</td>
+            <td>5V</td>
+          </tr>
+          <tr>
+            <th scope="row">3V3</th>
+            <td>3.3V</td>
+            <td>3.3V</td>
+          </tr>
+          <tr>
+            <th scope="row">RST</th>
+            <td>RST</td>
+            <td>Reset</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="item" style="margin-bottom: 100px; width: 600px;" ></div>
+    </div>
+      <footer>
+        <div>
+            <p>Diseñado por GDR Gonzalo Daniel Robles  &copy; 2023</p>
+            <a href="https://github.com/Gonzalo-Robles" target="_blank"><img src="./images/GitHub.png" alt="github" height="auto" width="25"></a>
+            <a href="https://www.linkedin.com/in/gonzalo-robles-201984/" target="_blank"><img src="./images/linkedin.png" alt="linkedin" height="auto" width="25"></a>
+        </div>
+      </footer>
+
+  </body>
+</html>

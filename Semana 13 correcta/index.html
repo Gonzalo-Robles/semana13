@@ -1,0 +1,79 @@
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="./images/favicon.jpeg" type="image/x-icon">
+        <title>Iot GDR</title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      </head>
+      <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./proyectos.html">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./sobre-mi.html">Sobre-mi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./buscador.html">Buscador</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="login-link" href="./login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="logout-link" href="./logout.html">Logout</a>
+                </li>
+                <li class="nav-item">
+                  
+                </li>    
+              </ul>
+   
+            </div>
+        </nav>
+       
+        <div class="container">
+          <div class="item"><h1 style="margin: 0 auto;">Internet de las Cosas (IoT)</h1></div>
+          <div class="item"> <img src="./images/iot.png" alt="github" height="auto" width="100%"></div>
+          <div class="item"><p>El Internet de las Cosas (IoT) es una revolucionaria
+              tecnología que conecta objetos físicos a la red, permitiéndoles intercambiar 
+              datos y tomar decisiones inteligentes de manera autónoma. Utiliza sensores, 
+              dispositivos y conectividad para recopilar información del entorno y controlar
+               acciones específicas. 
+              IoT tiene un impacto significativo en una amplia gama de aplicaciones, desde 
+              el monitoreo de la salud en tiempo real y la gestión inteligente de ciudades,
+               hasta la automatización en la industria. Esta interconexión de dispositivos 
+               ofrece un potencial ilimitado para mejorar la eficiencia, la seguridad y la
+                calidad de vida en nuestra sociedad actual.</p></div>
+          <div class="item">4</div>
+      </div>
+        <footer>
+            <div class="footer-columna">
+                <p>Diseñado por GDR Gonzalo Daniel Robles  &copy; 2023</p>
+                <a href="https://github.com/Gonzalo-Robles" target="_blank"><img src="./images/GitHub.png" alt="github" height="auto" width="25"></a>
+                <a href="https://www.linkedin.com/in/gonzalo-robles-201984/" target="_blank"><img src="./images/linkedin.png" alt="linkedin" height="auto" width="25"></a>
+            </div>
+        </footer>  
+       
+        <script src="script.js"></script>
+        <script>
+          // Llama a checkAuthentication cuando la página se carga para ver el estado si esta o no autenticado
+          window.addEventListener("load", checkAuthentication);
+        </script>
+      </body>
+    </html>
